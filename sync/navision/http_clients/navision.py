@@ -13,5 +13,5 @@ class NavisionClient:
 
 def create_navision_client():
     #zeep_client = Client("navision_wsdl.xml")
-    zeep_client = Client("https://b6589f70effc.ngrok-free.app/wsdl")
+    zeep_client = Client("https://6629d9b4d06c.ngrok-free.app/wsdl")
     return NavisionClient(zeep_client)
