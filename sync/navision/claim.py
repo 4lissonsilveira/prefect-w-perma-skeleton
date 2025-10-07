@@ -31,7 +31,7 @@ def flow_sync_case_object() -> None:
     sf_client.update_claims(rows_to_update)
 
 @flow(log_prints=True) # type: ignore
-def flow_sync_single_case_object(salesforce_case_number: str) -> None
+def flow_sync_single_case_object(salesforce_case_number: str) -> None:
     logger = get_run_logger() # type: ignore
 
     sf_client = create_salesforce_client(
