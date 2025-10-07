@@ -27,7 +27,7 @@ deployments:
   description: null
   schedule: {}
   flow_name: get-data-from-sf
-  entrypoint: sync/navision/entrypoint.py:main_flow
+  entrypoint: sync/navision/claim.py:flow_sync_case_object
   parameters: 
      salesforce_case_number: ""
   work_pool:
@@ -36,3 +36,4 @@ deployments:
     job_variables: 
       env:
         EXTRA_PIP_PACKAGES: simple_salesforce,zeep
+
