@@ -53,3 +53,7 @@ def flow_sync_case_object() -> None:
 #     }
 #     logger.info(f"Claim {sf_case['ClaimHeader']['No']} upserted")
 #     sf_client.update_claims(rows_to_update)
+
+
+if __name__ == "__main__":
+    flow_sync_case_object()
