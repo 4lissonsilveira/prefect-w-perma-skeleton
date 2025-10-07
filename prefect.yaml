@@ -28,8 +28,7 @@ deployments:
   schedule: {}
   flow_name: get-data-from-sf
   entrypoint: sync/navision/claim.py:flow_sync_case_object
-  parameters: 
-     salesforce_case_number: ""
+  parameters:
   work_pool:
     name: null
     work_queue_name: null
